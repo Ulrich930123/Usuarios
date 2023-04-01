@@ -5,22 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Log_in">
+    tools:context=".Sign_Up">
 //Menu de encabezado
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#009688"
         android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="1"
-            android:background="#2196F3"
-            android:text="Log in" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,15 +22,6 @@
             android:text="UDE APP"
             android:textAlignment="center"
             android:visibility="visible" />
-
-        <Button
-            android:id="@+id/signup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="1"
-            android:background="#03A9F4"
-            android:text="Sign Up" />
 
 
     </LinearLayout>
@@ -53,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Log In"
+            android:text="Usuarios"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="24sp"
@@ -69,16 +51,38 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:text="Username/ email:" />
+            android:text="Usernamel:" />
+
         <EditText
-            android:id="@+id/user"
+            android:id="@+id/TextPersonName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textNoSuggestions"
-            android:text="Username" />
+            android:inputType="textPersonName" />
     </LinearLayout>
-    //linea del password
+
+    //linea del email
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="email:" />
+
+        <EditText
+            android:id="@+id/EmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+
+    //linea del id usuario
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -89,22 +93,44 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:text="password:" />
+            android:text=" id usuario:" />
         <EditText
-            android:id="@+id/pass123"
+            android:id="@+id/idusuario"
             android:layout_width="wrap_content"
-            android:layout_height="34dp"
+            android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword|textNoSuggestions" />
+            android:inputType="textPersonName"
+            android:text="" />
     </LinearLayout>
-    //linea del boton de enviar
 
+    //linea del boton de enviar
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
     <Button
-        android:id="@+id/send"
+        android:id="@+id/buscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center_horizontal"
         android:backgroundTint="#FF5722"
-        android:text="Enviar" />
+        android:text="buscar" />
+
+        <Button
+            android:id="@+id/actualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:text="actualizar" />
+
+    <Button
+        android:id="@+id/eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:text="eliminar" />
+
+
+</LinearLayout>
+
 
 </LinearLayout>

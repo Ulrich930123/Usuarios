@@ -70,13 +70,13 @@
             android:layout_weight="1"
             android:textColor="#000000"
             android:text="Usernamel:" />
+
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/TextPersonName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Username" />
+            android:inputType="textNoSuggestions" />
     </LinearLayout>
 
     //linea del email
@@ -90,12 +90,13 @@
             android:layout_weight="1"
             android:textColor="#000000"
             android:text="email:" />
+
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+            android:id="@+id/EmailAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress|textNoSuggestions" />
     </LinearLayout>
     //linea del password
 
@@ -110,11 +111,11 @@
             android:textColor="#000000"
             android:text="password:" />
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/TextPassword"
             android:layout_width="wrap_content"
-            android:layout_height="34dp"
+            android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword|textNoSuggestions" />
     </LinearLayout>
 
     //linea del repeat password
@@ -128,18 +129,19 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:text="Repeat password:" />
+            android:text=" repeat password:" />
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/txtPassConfirm"
             android:layout_width="wrap_content"
-            android:layout_height="34dp"
+            android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword" />
     </LinearLayout>
+
     //linea del boton de enviar
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/guardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"

@@ -20,6 +20,9 @@
             android:name=".Log_in"
             android:exported="true"/>
         <activity
+            android:name=".Usuario"
+            android:exported="true"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
 
